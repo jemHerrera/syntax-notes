@@ -1,0 +1,34 @@
+# COMPUTED PROPERTIES: Create an SFC with reactive and computed
+
+
+
+
+
+
+
+
+
+# ---------------------------------------------------------------------------------------------------------------
+# Solution
+
+<script setup>
+import { reactive, computed } from 'vue'
+
+const item = reactive({
+    color: 'red',
+    shape: 'square',
+    size: 30
+})
+
+const sizeInMeters = computed(() => {
+    return item.size/10
+})
+
+<script>
+
+<template>
+    <div>
+        <p>Color: {{ item.color }}</p>
+        <p>Size in Meters: {{ sizeInMeters }}</p>
+    </div>
+</template>

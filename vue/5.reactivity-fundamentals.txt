@@ -1,0 +1,66 @@
+# REACTIVITY FUNDAMENTALS
+# CREATE SFC with REACTIVE. Add increment method and button
+
+# REACTIVE VARIABLES WITH ref(). Add increment method and button
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# ---------------------------------------------------------------------------------------------------------------
+# Solution
+# REACTIVE WITH FUNCTIONS THAT MUTATE STATE (SFC). Add script setup, an increment function and template
+<script setup>
+    import { reactive } from 'vue'
+
+    const state = reactive({
+        count: 0
+    })
+
+    function increment(){
+        state.count++
+    }
+</script>
+
+<template>
+    <div>
+        <button @click="increment">{{ state.count }}</button>
+    </div>
+</template>
+
+# REACTIVE VARIABLES WITH ref(). Add script setup, an increment function and template
+<script setup>
+import { ref } from 'vue'
+
+cont count = ref(0)
+
+function increment(){
+    count.value++
+}
+</script>
+
+<template>
+    <div>
+        <button @click="increment">{{ count }}</button>
+    </div>
+</template>
+
+
+# DECLARING REACTIVE STATE
+import { reactive } from 'vue'
+
+const state = reactive({
+    count: 0
+})
+
+# PRACTICE

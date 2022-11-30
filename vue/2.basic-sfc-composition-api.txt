@@ -1,5 +1,28 @@
-// Basic Single File Component with Composition API
+# Basic SFC with Composition API
+# Add a ref, an increment method and onMounted that logs an initial state.
+# Add a button on template that
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# ---------------------------------------------------------------------------------------------------------------
+# SOLUTION
 <script setup>
 import { ref, onMounted } from 'vue'
 

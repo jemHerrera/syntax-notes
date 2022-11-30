@@ -1,5 +1,17 @@
-//ROOT COMPONENT
+# CREATE A ROOT COMPONENT AND MOUNTING OF THAT COMPONENT
 
+
+
+
+
+
+
+
+
+
+
+# ---------------------------------------------------------------------------------------------------------------
+# Solution
 import { createApp } from 'vue'
 
 import App from './App.vue'
@@ -8,5 +20,5 @@ const app = createApp(App);
 app.mount('#app');
 
 
-//index.html
+# index.html
 <div id="app"></div>
