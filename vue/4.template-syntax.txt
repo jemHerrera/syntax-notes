@@ -1,0 +1,35 @@
+//INTERPOLATION
+<div>{{data}}</div>
+
+//ATTRIBUTE BINDING + SHORTHAND
+<div v-bind:id="dynamicId"></div>
+<div :id="dynamicId"></div>
+
+//DYNAMICALLY BINDING MULTIPLE ATTRIBUTES
+const objOfAttributes = {
+    id: "Hello",
+    class: "World"
+}
+
+<div v-bind="objOfAttrbutes"></div>
+
+//DYNAMIC ARGUMENTS
+<div v-on:[eventName]="doSomething"></div>
+<div v-bind:[argumentName]="something"></div>
+
+//MODIFIERS
+<button @click.prevent="onClickHandler"></button>
+
+
+
+
+
+//INTERPOLATION
+
+//ATTRIBUTE BINDING + SHORTHAND
+
+//DYNAMICALLY BINDING MULTIPLE ATTRIBUTES
+
+//DYNAMIC ARGUMENTS
+
+//MODIFIERS
