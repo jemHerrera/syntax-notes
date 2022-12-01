@@ -1,0 +1,13 @@
+
+# ---------------------------------------------------------------------------------------------------------------
+# Solution
+
+# CREATE AN EXAMPLE OF MOUNTED
+
+<script setup>
+    import { onMounted } from 'vue';
+
+    onMounted(() => {
+        console.log('hello')
+    })
+</script>

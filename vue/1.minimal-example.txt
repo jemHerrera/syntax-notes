@@ -1,4 +1,4 @@
-// Minimal Example
+# Minimal Example
 // js
 import { createApp } from 'vue'
 

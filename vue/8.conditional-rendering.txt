@@ -1,0 +1,12 @@
+# CONDITIONAL RENDERING SYNTAX. add else if and else
+
+
+
+# ---------------------------------------------------------------------------------------------------------------
+# Solution
+
+<div>
+    <p v-if="type=='A'">Type A</p>
+    <p v-else-if="type=='B'">Type B</p>
+    <p v-else>Any Other Type</p>
+</div>

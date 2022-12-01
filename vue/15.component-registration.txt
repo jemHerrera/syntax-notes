@@ -1,0 +1,43 @@
+
+# ---------------------------------------------------------------------------------------------------------------
+# Solution
+
+# CREATE A BASIC PARENT-CHILD COMPONENTs WITH PROPS, EMITS & SLOTS
+
+# ParentComponent.vue
+<script setup>
+    import ChildComponent from './Child.vue'
+
+    clear(){
+        # some code
+    }
+
+</script>
+
+<template>
+    <Child
+        propA = "Nice"
+        :propB = "42"
+        @clear = "clear"
+    >
+        <div>
+            <p>World</p>
+        </div>
+    </Child>
+</template>
+
+# ChildComponent.vue
+<script setup>
+    const props = defineProps({
+        propA: String,
+        propB: Number
+    })
+
+    const emits = defineEmits(['clear'])
+
+</script>
+<template>
+    <h1>Hello</h1>
+    <button @click="emit('clear')"></button>
+    <slot></slot>
+</template>

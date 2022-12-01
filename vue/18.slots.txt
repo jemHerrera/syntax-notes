@@ -1,0 +1,32 @@
+# NAMED SLOT. ADD 3 EXAMPLES, one default, one basic syntax, and one shorhand syntax
+
+
+
+
+
+# ---------------------------------------------------------------------------------------------------------------
+# Solution
+
+# BASIC EXAMPLE WITH FALLBACK CONTENT 
+
+# NAMED SLOT. ADD 3 EXAMPLES, one default, one basic syntax, and one shorhand syntax
+
+# ParentComponent.vue
+<ChildComponent>
+    <div v-slot="header"></div>
+    <div #default></div>
+    <div #footer></div>
+</ChildComponent>
+
+# ChildComponent.vue
+<div>
+    <header>
+        <slot name="header"></slot>
+    </header>
+    <main>
+        <slot></slot>
+    </main>
+    <footer>
+        <slot name="footer"></slot>
+    </footer>
+</div>

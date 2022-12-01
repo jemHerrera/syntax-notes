@@ -1,0 +1,13 @@
+
+# ---------------------------------------------------------------------------------------------------------------
+# Solution
+
+
+# BASIC SYNTAX COMPOSITION API
+
+<script setup>
+
+    const vFocus = ({
+        mounted: (el) => el.focus
+    })
+</script>

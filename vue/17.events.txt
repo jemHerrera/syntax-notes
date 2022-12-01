@@ -1,0 +1,11 @@
+
+# ---------------------------------------------------------------------------------------------------------------
+# Solution
+
+# EMITS SYNTAX w/ ARGUMENTS, INCLUDE NAMECASING
+
+
+# EVENTS VALIDATION
+
+
+# EVENTS USING V-MODEL

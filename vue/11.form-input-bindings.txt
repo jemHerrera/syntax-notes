@@ -1,0 +1,29 @@
+# TRADITIONAL 2-WAY DATA BINDING VS VUE DIRECTIVE FOR INPUT BINDING
+
+# CHECKBOX SYNTAX
+
+# 3 MODIFIERS AND THEIR FUNCTION
+
+# ---------------------------------------------------------------------------------------------------------------
+# Solution
+
+# TRADITIONAL 2-WAY DATA BINDING VS VUE DIRECTIVE FOR INPUT BINDING
+const text = ref('');
+<input :value="text" @change="text = $event.target.value">
+<input v-model="text">
+
+# CHECKBOX SYNTAX
+const checked = ref(false);
+<input type="checkbox" v-model="checked">
+
+# MULTIPLE CHECKBOX SYNTAX
+
+# RADIO SYNTAX
+
+# SELECT SYNTAX
+
+# 3 MODIFIERS AND THEIR FUNCTION
+
+<input v-model.lazy="text">
+<input v-model.number="age">
+<input v-model.trim="text">

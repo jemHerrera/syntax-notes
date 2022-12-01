@@ -1,0 +1,66 @@
+# CLASS AND STYLE BINDINGS
+
+# Binding to Objects syntax. Add two ref classes. 
+
+# Create a another version using reactive object
+
+# Create another version using ref and computed
+
+# Binding to Arrays syntax. Add two ref classes. 
+
+# Binding Inline Styles. Add two ref styles
+
+# Multiple values=
+
+
+
+
+
+
+
+
+
+
+
+
+# ---------------------------------------------------------------------------------------------------------------
+# Solution
+# Binding to Objects syntax. Add two ref classes. 
+const active = ref(true)
+const hasError = ref(false)
+
+<div :class="{active: isActive, 'text-danger': hasError}"></div>
+
+# Create a another version using reactive object
+const classObject = reactive({
+    active: true,
+    'text-danger': false
+})
+
+<div :class="classObject"></div>
+
+# Create another version using ref and computed
+const active = ref(true);
+const hasError = ref(false)
+
+const classObject = computed({
+    active: active.value && !hasErrror.value
+    hasError: !active.value || hasError.value
+})
+
+<div :class="classObject"></div>
+
+# Binding to Arrays syntax. Add two ref classes. 
+const classA = ref(active);
+const classB = ref(hasError);
+
+<div :class="[classA, classB]""></div>
+
+# Binding Inline Styles. Add two ref styles
+const color = ref(red);
+const fontSize = ref(30);
+
+<div :style="{color: color, fontSize: fontSize}"></div>
+
+# Multiple values
+<div :style="{display: ['-webkit-box', 'ms-flexbox', 'flex']}"></div>

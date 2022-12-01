@@ -1,0 +1,34 @@
+# CREATE AN INLINE EVENT AND METHOD EVENT
+
+# ACCESSING EVENT HANDLERS IN INLINE HANDLERS
+# USING $event special variable
+
+# USING inline arrow function
+
+
+
+
+
+
+
+# ---------------------------------------------------------------------------------------------------------------
+# Solution
+# CREATE AN INLINE EVENT AND METHOD EVENT
+
+<button @click="count++"></button>
+<button @click="increment"></button>
+
+increment(){
+    count.value++
+}
+
+# ACCESSING EVENT HANDLERS IN INLINE HANDLERS
+# USING $event special variable
+<button @click="activate($event)"></button>
+
+# USING inline arrow function
+<button @click="(event) => activate(event)"></button>
+
+function activate(event){
+    console.log(event);
+}

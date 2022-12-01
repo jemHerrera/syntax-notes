@@ -1,0 +1,22 @@
+# CREATE AN EXAMPLE OF A WATCHER THAT FETCHES FROM API
+
+
+# ---------------------------------------------------------------------------------------------------------------
+# Solution
+
+# CREATE AN EXAMPLE OF A WATCHER THAT FETCHES FROM API
+<script setup>
+    import { ref, watch} from 'vue';
+
+    const state = ref('');
+    const result = ref({})
+
+    watch(state, async (stateBefore, stateAfter) => {
+        try{
+            const result = await fetch('https.something/api');
+            result.value = result.json;
+        } catch{
+            result.value = 'Error'
+        }
+    })
+</script>
