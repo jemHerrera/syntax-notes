@@ -1,9 +1,16 @@
 # CREATE AN INLINE EVENT AND METHOD EVENT
 
-# ACCESSING EVENT HANDLERS IN INLINE HANDLERS
-# USING $event special variable
+# ACCESSING EVENT HANDLERS IN INLINE HANDLERS (2 ways)
 
-# USING inline arrow function
+
+
+
+
+
+
+
+
+
 
 
 

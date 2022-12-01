@@ -1,5 +1,19 @@
 # NAMED SLOT. ADD 3 EXAMPLES, one default, one basic syntax, and one shorhand syntax
 
+# ParentComponent.vue
+
+
+
+
+# ChildComponent.vue
+
+
+
+
+
+
+
+
 
 
 

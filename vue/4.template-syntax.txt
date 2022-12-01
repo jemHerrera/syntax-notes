@@ -7,7 +7,6 @@
 
 # DYNAMIC ARGUMENTS syntax
 
-# MODIFIERS syntax
 
 
 
@@ -34,8 +33,6 @@ const objOfAttributes = {
 <div v-on:[eventName]="doSomething"></div>
 <div v-bind:[argumentName]="something"></div>
 
-# MODIFIERS
-<button @click.prevent="onClickHandler"></button>
 
 
 

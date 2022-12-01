@@ -1,8 +1,27 @@
 # TRADITIONAL 2-WAY DATA BINDING VS VUE DIRECTIVE FOR INPUT BINDING
 
+
 # CHECKBOX SYNTAX
 
-# 3 MODIFIERS AND THEIR FUNCTION
+
+# 3 v-model MODIFIERS AND THEIR FUNCTION
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # ---------------------------------------------------------------------------------------------------------------
 # Solution

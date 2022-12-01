@@ -1,8 +1,28 @@
-# LIST RENDERING SYNTAX WITH COMBINATION OF CONDITIONAL RENDERING AND MAINTAINING STATE using key
+# LIST RENDERING (with index) SYNTAX WITH COMBINATION OF CONDITIONAL RENDERING AND MAINTAINING STATE using key
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # ---------------------------------------------------------------------------------------------------------------
 # Solution
-<template v-for="(item, index) in items" :key="item.id">
-    <li v-if="index%2 == 0">{{ item.name }}</li>
-</template>
+<ul>
+    <template v-for="((item, index) in items)" :key="item.id">
+        <li v-if="item.active">{{item.name}}</li>
+    </template>
+</ul>

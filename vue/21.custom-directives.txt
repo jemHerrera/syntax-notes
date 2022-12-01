@@ -1,3 +1,18 @@
+# BASIC SYNTAX COMPOSITION API
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # ---------------------------------------------------------------------------------------------------------------
 # Solution
@@ -8,6 +23,6 @@
 <script setup>
 
     const vFocus = ({
-        mounted: (el) => el.focus
+        mounted: (el) => el.focus()
     })
 </script>

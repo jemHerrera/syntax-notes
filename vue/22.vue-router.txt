@@ -1,0 +1,101 @@
+# SIMPLE ROUTING FROM SCRATCH
+
+
+
+
+
+
+# SAME EXAMPLE USING VUE ROUTER
+
+
+
+
+
+
+
+
+
+# ---------------------------------------------------------------------------------------------------------------
+# Solution
+
+# SIMPLE ROUTING FROM SCRATCH
+<script setup>
+    import (ref, computed) from 'vue'
+    import Home from './Home.vue'
+    import About from './About.vue'
+    import NotFound from './NotFound.vue'
+
+    const routes = {
+        '/': Home,
+        '/about': About
+    }
+
+    const currentPath = ref(window.location.hash)
+
+    window.addEventListener('hashChange', () => {
+        currentPath.value = window.location.hash
+    })
+
+    const currentView = computed(() => {
+        return routes[currentPath.value.slice[1] || '/'] || NotFound
+    })
+</script>
+
+<template>
+    <div>
+        <nav>
+            <a href="#/">Home</a>
+            <a href="#/about">About</a>
+        </nav>
+        <component :is="currentView" />
+    </div>
+</template>
+
+
+# SAME EXAMPLE USING VUE ROUTER
+
+# main.js
+import router from './router.js'
+import { createApp } from 'vue'
+import App from './App.vue'
+
+const app = createApp(App)
+app.use(router)
+app.mount("#app")
+
+# App.vue
+<script setup>
+    import { RouterLink, RouterView } from 'vue-router'
+
+</script>
+
+<template>
+    <nav>
+        <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/about">About</RouterLink>
+    </nav>
+
+    <RouterView />
+</template>
+
+# router.js
+import { createRouter } from 'vue-router'
+import Home from './Home.vue'
+import About from './About.vue'
+import NotFound from './NotFound.vue'
+
+export default createRouter({
+    routes: [
+        {
+            path: '/'
+            name: 'Home'
+            component: Home
+        }
+        {
+            path: '/about'
+            name: 'About'
+            component: About
+        }
+    ]
+})
+
